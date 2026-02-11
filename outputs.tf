@@ -1,5 +1,5 @@
-output "key_vault_managed_hardware_security_module_key_rotation_policys" {
+output "key_vault_managed_hardware_security_module_key_rotation_policies" {
   description = "All key_vault_managed_hardware_security_module_key_rotation_policy resources"
-  value       = azurerm_key_vault_managed_hardware_security_module_key_rotation_policy.key_vault_managed_hardware_security_module_key_rotation_policys
+  value       = azurerm_key_vault_managed_hardware_security_module_key_rotation_policy.key_vault_managed_hardware_security_module_key_rotation_policies
 }
 
