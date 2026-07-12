@@ -1,3 +1,7 @@
+output "key_vault_managed_hardware_security_module_key_rotation_policies_id" {
+  description = "Map of id values across all key_vault_managed_hardware_security_module_key_rotation_policies, keyed the same as var.key_vault_managed_hardware_security_module_key_rotation_policies"
+  value       = { for k, v in azurerm_key_vault_managed_hardware_security_module_key_rotation_policy.key_vault_managed_hardware_security_module_key_rotation_policies : k => v.id }
+}
 output "key_vault_managed_hardware_security_module_key_rotation_policies_expire_after" {
   description = "Map of expire_after values across all key_vault_managed_hardware_security_module_key_rotation_policies, keyed the same as var.key_vault_managed_hardware_security_module_key_rotation_policies"
   value       = { for k, v in azurerm_key_vault_managed_hardware_security_module_key_rotation_policy.key_vault_managed_hardware_security_module_key_rotation_policies : k => v.expire_after }
